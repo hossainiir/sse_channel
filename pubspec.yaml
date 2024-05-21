@@ -10,7 +10,8 @@ dependencies:
   async: ^2.11.0
   http: ^1.2.0
   pool: ^1.5.1
-  sse: ^4.1.4
+  sse: 
+    git: https://github.com/hossainiir/sse
   stream_channel: ^2.1.2
   uuid: ^4.3.3
 
