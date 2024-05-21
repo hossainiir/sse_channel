@@ -75,7 +75,7 @@ class IOSseChannel extends StreamChannelMixin implements SseChannel {
     String? encodedMessage;
     await _requestPool.withResource(() async {
       try {
-        encodedMessage = jsonEncode(message);
+        encodedMessage = message;
       } on JsonUnsupportedObjectError {
         //_logger.warning('[$_clientId] Unable to encode outgoing message: $e');
       } on ArgumentError {
